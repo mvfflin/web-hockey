@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
     return (
         <main className="w-full h-full">
@@ -5,14 +7,20 @@ export default function Home() {
                 id="home"
                 className="bg-gradient-to-tr from-yellow-600 to-yellow-200 h-screen flex"
             >
-                <img
+                <Image
+                    alt="hockey-docs"
+                    width={9999}
+                    height={9999}
                     src="/docs/hockey1.jpg"
-                    className="w-1/2 h-full object-cover"
+                    className="!w-1/2 !h-full object-cover"
                 />
                 <div className="m-auto justify-center text-center items-center">
-                    <img
+                    <Image
+                        alt="hockey-logo"
+                        width={600}
+                        height={600}
                         src="/hockey.png"
-                        className="w-52 my-2 mx-auto rounded-full border-2 border-white"
+                        className="!w-52 my-2 mx-auto rounded-full border-2 border-white"
                     />
                     <h1 className="text-5xl font-extrabold text-blue-900 font-helveticabold">
                         FIVE HOCKEY

@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect } from "react";
 
 const Header = () => {
     useEffect(() => {
         const header = document.getElementById("header");
-        window.addEventListener("scroll", (ev) => {
+        window.addEventListener("scroll", () => {
             if (window.scrollY == 0) {
                 header?.classList.add("!bg-opacity-10");
             } else {
@@ -26,9 +27,12 @@ const Header = () => {
             className="transition-all h-20 bg-blue-900 w-full flex justify-between fixed font-poppins"
         >
             <div className="my-auto ml-12 float-start flex space-x-5">
-                <img
+                <Image
+                    alt="hockey-logo"
                     src="/hockey.png"
-                    className="w-16 aspect-square rounded-full m-auto"
+                    width={600}
+                    height={600}
+                    className="!w-16 aspect-square rounded-full m-auto"
                 />
                 <h1 className="font-bold text-white text-3xl m-auto">
                     FIVE HOCKEY
