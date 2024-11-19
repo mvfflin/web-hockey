@@ -1,6 +1,30 @@
+"use client";
+
+import { useEffect } from "react";
+
 const Header = () => {
+    useEffect(() => {
+        const header = document.getElementById("header");
+        window.addEventListener("scroll", (ev) => {
+            if (window.scrollY == 0) {
+                header?.classList.add("!bg-opacity-10");
+            } else {
+                header?.classList.remove("!bg-opacity-10");
+            }
+        });
+
+        if (window.scrollY == 0) {
+            header?.classList.add("!bg-opacity-10");
+        } else {
+            header?.classList.remove("!bg-opacity-10");
+        }
+    }, []);
+
     return (
-        <header className="h-20 bg-blue-900 w-full flex justify-between fixed">
+        <header
+            id="header"
+            className="transition-all h-20 bg-blue-900 w-full flex justify-between fixed font-poppins"
+        >
             <div className="my-auto ml-12 float-start flex space-x-5">
                 <img
                     src="/hockey.png"
@@ -14,7 +38,7 @@ const Header = () => {
                 <li>Home</li>
                 <li>Tentang</li>
                 <li>Kegiatan</li>
-                <li>Daftar</li>
+                <li>Pendaftaran</li>
             </ul>
         </header>
     );
