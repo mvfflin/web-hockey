@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: "Icons";
+    src: url("../assets/fonts/type_icons/Type\ Icons.ttf"), format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "HelveticaBold";
     src: url("../assets/fonts/helvetica-255/Helvetica-Bold.ttf"),
         format("truetype");

@@ -12,7 +12,7 @@ export default function Home() {
                     width={9999}
                     height={9999}
                     src="/docs/hockey1.jpg"
-                    className="!w-1/2 !h-full object-cover"
+                    className="!w-1/2 !h-full object-cover hidden md:flex"
                 />
                 <div className="m-auto justify-center text-center items-center">
                     <Image
@@ -34,15 +34,15 @@ export default function Home() {
                 </div>
             </section>
             <section
-                className="h-screen flex bg-blue-900 px-12 md:px-32"
+                className="h-auto flex bg-yellow-500 p-12 md:p-32"
                 id="about"
             >
                 <div className="m-auto">
-                    <h1 className="text-4xl font-helveticabold text-yellow-500 font-extrabold">
+                    <h1 className="text-4xl font-helveticabold text-blue-900 font-extrabold">
                         Apa sih itu hockey?
                     </h1>
-                    <hr className="border-1 border-yellow-700 my-2" />
-                    <h1 className="text-xl font-poppins text-yellow-500 font-bold">
+                    <hr className="border-1 border-blue-700 my-2" />
+                    <h1 className="text-xl font-poppins text-blue-900 font-bold">
                         Hockey adalah suatu permainan bola kecil yang
                         menggunakan stick khusus sebagai alat bermainnya. Hockey
                         memiliki dua jenis, yaitu hockey es/ice hockey dan
@@ -56,17 +56,32 @@ export default function Home() {
                     <br />
                     <br />
                     <br />
-                    <h1 className="text-4xl font-helveticabold text-yellow-500 font-extrabold">
+                    <h1 className="text-4xl font-helveticabold text-blue-900 font-extrabold">
                         Kenapa harus join hockey?
                     </h1>
                     <hr className="border-1 border-yellow-700 my-2" />
-                    <h1 className="text-xl font-poppins text-yellow-500 font-bold">
+                    <h1 className="text-xl font-poppins text-blue-900 font-bold">
                         Sebab dimana lagi kamu bisa bermain olahraga yang unik
                         satu ini, dan jarang sekali ada sekolah di Bekasi yang
                         mengadakan ekskul hockey ini, jadi ini adalah kesempatan
                         kalian untuk mencoba olahraga ini dan memperoleh ilmu
                         baru yang jarang dijumpai disekitar kita.
                     </h1>
+                </div>
+            </section>
+            <section className="h-auto flex py-28">
+                <div className="m-auto text-center">
+                    <h1 className="text-4xl text-zinc-900 font-poppins font-bold">
+                        Tertarik untuk join hockey?
+                    </h1>
+                    <h2 className="text-xl text-zinc-900 font-poppins">
+                        Ayo daftar sekarang, dengan cara join whatsapp agar tahu
+                        informasi ekskul berikutnya
+                    </h2>
+                    <button className="px-5 py-2 bg-green-500 text-white font-poppins rounded-full my-2">
+                        <span className="font-icon">n</span>
+                        &nbsp;&nbsp;&nbsp;Whatsapp
+                    </button>
                 </div>
             </section>
         </main>

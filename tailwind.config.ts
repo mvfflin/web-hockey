@@ -12,6 +12,7 @@ export default {
                 helvetica: ["Helvetica"],
                 helveticabold: ["HelveticaBold"],
                 poppins: ["Poppins"],
+                icon: ["Icons"],
             },
             colors: {
                 background: "var(--background)",
