@@ -3,16 +3,22 @@
 @tailwind utilities;
 
 :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header ul li {
-    @apply font-semibold text-xl bg-blue-700 px-5 py-2 rounded-sm cursor-pointer hover:bg-blue-800 transition-all hover:scale-105 hover:ring-1 hover:ring-white hover:rotate-1;
+  @apply font-semibold md:text-sm lg:text-xl bg-blue-700 px-5 py-2 rounded-sm cursor-pointer hover:bg-blue-800 transition-all hover:scale-105 hover:ring-1 hover:ring-white hover:rotate-1;
+}
+
+.hcky {
+  background-image: url(/docs/hockey1.jpg),
+    linear-gradient(to bottom, gray, gray);
+  background-blend-mode: multiply;
 }
