@@ -48,9 +48,10 @@ export default function Home() {
                         memiliki dua jenis, yaitu hockey es/ice hockey dan
                         hockey bola. <br />
                         <br />
-                        Hockey di SMAN 5 adalah jenis hockey bola, karena tidak
-                        mungkin kita bermain ice hockey tanpa ada es. Bola yang
-                        digunakan adalah semacam bola golf
+                        Hockey di SMAN 5 termasuk jenis hockey bola, karena
+                        tidak mungkin kita bermain ice hockey tanpa ada es. Bola
+                        yang digunakan adalah semacam bola golf, jadi untuk
+                        kiper menggunakan perlengkapan khusus sebagai pelindung
                     </h1>
                     <br />
                     <br />
@@ -69,7 +70,7 @@ export default function Home() {
                     </h1>
                 </div>
             </section>
-            <section className="h-auto flex py-28">
+            <section id="join" className="h-auto flex py-28">
                 <div className="m-auto text-center">
                     <h1 className="text-4xl text-zinc-900 font-poppins font-bold">
                         Tertarik untuk join hockey?
@@ -78,10 +79,15 @@ export default function Home() {
                         Ayo daftar sekarang, dengan cara join whatsapp agar tahu
                         informasi ekskul berikutnya
                     </h2>
-                    <button className="px-5 py-2 bg-green-500 text-white font-poppins rounded-full my-2">
-                        <span className="font-icon">n</span>
-                        &nbsp;&nbsp;&nbsp;Whatsapp
-                    </button>
+                    <a
+                        href="https://chat.whatsapp.com/J0433oQsyIVJY1QZNy0dKC"
+                        target="_blank"
+                    >
+                        <button className="px-5 py-2 bg-green-500 text-white font-poppins rounded-full my-2">
+                            <span className="font-icon">n</span>
+                            &nbsp;&nbsp;&nbsp;Whatsapp
+                        </button>
+                    </a>
                 </div>
             </section>
         </main>

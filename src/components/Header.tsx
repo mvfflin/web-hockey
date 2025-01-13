@@ -39,10 +39,15 @@ const Header = () => {
                 </h1>
             </div>
             <ul className="my-auto mr-12 float-end flex space-x-5 list-none">
-                <li>Home</li>
-                <li>Tentang</li>
-                <li>Kegiatan</li>
-                <li>Pendaftaran</li>
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#about">
+                    <li>Tentang</li>
+                </a>
+                <a href="#join">
+                    <li>Join!</li>
+                </a>
             </ul>
         </header>
     );
